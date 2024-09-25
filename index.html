@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python guide</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#intro">Введение</a></li>
+                <li><a href="#variables">Переменные</a></li>
+                <li><a href="#data-types">Типы данных</a></li>
+                <li><a href="#operators">Операторы</a></li>
+                <li><a href="#control-structures">Управляющие конструкции</a></li>
+                <li><a href="#functions">Функции</a></li>
+                <li><a href="#modules">Модули</a></li>
+                <li><a href="#math">Математические функции</a></li>
+                <li><a href="#itertools">Итераторы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro">
+            <h1>Python guide</h1>
+            <p>Python - это высокоуровневый язык программирования, который используется для разработки различных приложений.</p>
+        </section>
+        <!-- Содержимое -->
+        <section id="variables">
+            <h2>Переменные</h2>
+            <p>Переменные в Python - это имена, которые присваиваются значениям.</p>
+            <ul>
+                <li><code>x = 5</code> - присваивает значение 5 переменной x</li>
+                <li><code>y = "Hello, World!"</code> - присваивает строковое значение переменной y</li>
+                <li><code>z = True</code> - присваивает логическое значение переменной z</li>
+            </ul>
+            <h3>Типы переменных</h3>
+            <ul>
+                <li>Целые числа (int)</li>
+                <li>Вещественные числа (float)</li>
+                <li>Строки (str)</li>
+                <li>Логические значения (bool)</li>
+                <li>Списки (list)</li>
+                <li>Кортежи (tuple)</li>
+                <li>Словари (dict)</li>
+            </ul>
+            <h3>Присваивание значений переменным</h3>
+            <ul>
+                <li><code>x = 5</code> - присваивает значение 5 переменной x</li>
+                <li><code>y = "Hello, World!"</code> - присваивает строковое значение переменной y</li>
+                <li><code>z = True</code> - присваивает логическое значение переменной z</li>
+            </ul>
+            <h3>Вывод значений переменных</h3>
+            <ul>
+                <li><code>print(x)</code> - выводит значение переменной x</li>
+                <li><code>print(y)</code> - выводит значение переменной y</li>
+                <li><code>print(z)</code> - выводит значение переменной z</li>
+            </ul>
+        </section>
+        <section id="data-types">
+            <h2>Типы данных</h2>
+            <p>Python имеет следующие типы данных:</p>
+            <ul>
+                <li>Целые числа (int)</li>
+                <li>Вещественные числа (float)</li>
+                <li>Строки (str)</li>
+                <li>Логические значения (bool)</li>
+                <li>Списки (list)</li>
+                <li>Кортежи (tuple)</li>
+                <li>Словари (dict)</li>
+            </ul>
+            <h3>Целые числа (int)</h3>
+            <ul>
+                <li><code>x = 5</code> - присваивает значение 5 переменной x</li>
+                <li><code>y = -3</code> - присваивает значение -3 переменной y</li>
+            </ul>
+            <h3>Вещественные числа (float)</h3>
+            <ul>
+                <li><code>x = 3.14</code> - присваивает значение 3.14 переменной x</li>
+                <li><code>y = -0.5</code> - присваивает значение -0.5 переменной y</li>
+            </ul>
+            <h3>Строки (str)</h3>
+            <ul>
+                <li><code>x = "Hello, World!"</code> - присваивает строковое значение переменной x</li>
+                <li><code>y = 'Python'</code> - присваивает строковое значение переменной y</li>
+            </ul>
+            <h3>Логические значения (bool)</h3>
+            <ul>
+                <li><code>x = True</code> - присваивает логическое значение True переменной x</li>
+                <li><code>y = False</code> - присваивает логическое значение False переменной y</li>
+            </ul>
+            <h3>Списки (list)</h3>
+            <ul>
+                <li><code>x = [1, 2, 3]</code> - присваивает список значений переменной x</li>
+                <li><code>y = ["a", "b", "c"]</code> - присваивает список строковых значений переменной y</li>
+            </ul>
+            <h3>Кортежи (tuple)</h3>
+            <ul>
+                <li><code>x = (1, 2, 3)</code> - присваивает кортеж значений переменной x</li>
+                <li><code>y = ("a", "b", "c")</code> - присваивает кортеж строковых значений переменной y</li>
+            </ul>
+            <h3>Словари (dict)</h3>
+            <ul>
+                <li><code>x = {"name": "John", "age": 30}</code> - присваивает словарь значений переменной x</li>
+                <li><code>y = {"city": "New York", "country": "USA"}</code> - присваивает словарь строковых значений переменной y</li>
+            </ul>
+        </section>
+        <section id="operators">
+            <h2>Операторы</h2>
+            <p>Python имеет следующие операторы:</p>
+            <ul>
+                <li>Арифметические операторы</li>
+                <li>Операторы сравнения</li>
+                <li>Логические операторы</li>
+                <li>Операторы присваивания</li>
+                <li>Операторы членства</li>
+                <li>Операторы идентичности</li>
+            </ul>
+            <h3>Арифметические операторы</h3>
+            <ul>
+                <li><code>x = 5 + 3</code> - сложение</li>
+                <li><code>x = 5 - 3</code> - вычитание</li>
+                <li><code>x = 5 * 3</code> - умножение</li>
+                <li><code>x = 5 / 3</code> - деление</li>
+                <li><code>x = 5 % 3</code> - остаток от деления</li>
+                <li><code>x = 5 ** 3</code> - возведение в степень</li>
+            </ul>
+            <h3>Операторы сравнения</h3>
+            <ul>
+                <li><code>x = 5 == 3</code> - равенство</li>
+                <li><code>x = 5 != 3</code> - неравенство</li>
+                <li><code>x = 5 > 3</code> - больше</li>
+                <li><code>x = 5 < 3</code> - меньше</li>
+                <li><code>x = 5 >= 3</code> - больше или равно</li>
+                <li><code>x = 5 <= 3</code> - меньше или равно</li>
+            </ul>
+            <h3>Логические операторы</h3>
+            <ul>
+                <li><code>x = True and False</code> - логическое и</li>
+                <li><code>x = True or False</code> - логическое или</li>
+                <li><code>x = not True</code> - логическое не</li>
+            </ul>
+            <h3>Операторы присваивания</h3>
+            <ul>
+                <li><code>x = 5</code> - присваивание</li>
+                <li><code>x += 3</code> - сложение с присваиванием</li>
+                <li><code>x -= 3</code> - вычитание с присваиванием</li>
+                <li><code>x *= 3</code> - умножение с присваиванием</li>
+                <li><code>x /= 3</code> - деление с присваиванием</li>
+                <li><code>x %= 3</code> - остаток от деления с присваиванием</li>
+                <li><code>x **= 3</code> - возведение в степень с присваиванием</li>
+            </ul>
+            <h3>Операторы членства</h3>
+            <ul>
+                <li><code>x = 5 in [1, 2, 3]</code> - проверка членства</li>
+                <li><code>x = 5 not in [1, 2, 3]</code> - проверка нечленства</li>
+            </ul>
+            <h3>Операторы идентичности</h3>
+            <ul>
+                <li><code>x = 5 is 3</code> - проверка идентичности</li>
+                <li><code>x = 5 is not 3</code> - проверка неидентичности</li>
+            </ul>
+        </section>
+        <section id="control-structures">
+            <h2>Управляющие конструкции</h2>
+            <p>Python имеет следующие управляющие конструкции:</p>
+            <ul>
+                <li>if-else</li>
+                <li>for</li>
+                <li>while</li>
+            </ul>
+            <h3>if-else</h3>
+            <ul>
+                <li><code>if x > 5: print("x больше 5")</code> - проверка условия</li>
+                <li><code>if x > 5: print("x больше 5") else: print("x меньше или равно 5")</code> - проверка условия с else</li>
+            </ul>
+            <h3>for</h3>
+            <ul>
+                <li><code>for x in range(5): print(x)</code> - цикл по диапазону</li>
+                <li><code>for x in [1, 2, 3]: print(x)</code> - цикл по списку</li>
+            </ul>
+            <h3>while</h3>
+            <ul>
+                <li><code>x = 0; while x < 5: print(x); x += 1</code> - цикл while</li>
+            </ul>
+            <h3>break и continue</h3>
+            <ul>
+                <li><code>for x in range(5): if x == 3: break; print(x)</code> - выход из цикла</li>
+                <li><code>for x in range(5): if x == 3: continue; print(x)</code> - пропуск итерации</li>
+            </ul>
+        </section>
+        <section id="functions">
+            <h2>Функции</h2>
+            <p>Функции в Python - это блоки кода, которые можно вызывать несколько раз.</p>
+            <ul>
+                <li><code>def имя_функции(аргументы):</code> - определение функции</li>
+                <li><code>имя_функции(аргументы)</code> - вызов функции</li>
+            </ul>
+            <h3>Определение функции</h3>
+            <ul>
+                <li><code>def greet(name): print("Hello, " + name + "!")</code> - определение функции с одним аргументом</li>
+                <li><code>def add(x, y): return x + y</code> - определение функции с двумя аргументами и возвращаемым значением</li>
+            </ul>
+            <h3>Вызов функции</h3>
+            <ul>
+             <li><code>greet("John")</code> - вызов функции с одним аргументом</li>
+                <li><code>result = add(2, 3)</code> - вызов функции с двумя аргументами и сохранение результата</li>
+            </ul>
+            <h3>Аргументы функции</h3>
+            <ul>
+                <li><code>def func(x, y=2): return x + y</code> - определение функции с аргументом по умолчанию</li>
+                <li><code>def func(*args): return sum(args)</code> - определение функции с переменным числом аргументов</li>
+                <li><code>def func(**kwargs): return kwargs</code> - определение функции с переменным числом именованных аргументов</li>
+            </ul>
+            <h3>Возвращаемое значение функции</h3>
+            <ul>
+                <li><code>def func(x, y): return x + y</code> - определение функции с возвращаемым значением</li>
+                <li><code>def func(x, y): pass</code> - определение функции без возвращаемого значения</li>
+            </ul>
+        </section>
+        <section id="modules">
+            <h2>Модули</h2>
+            <p>Модули в Python - это файлы, которые содержат функции, классы и переменные.</p>
+            <ul>
+                <li><code>import имя_модуля</code> - импортирование модуля</li>
+                <li><code>from имя_модуля import имя_функции</code> - импортирование функции из модуля</li>
+            </ul>
+            <h3>Импортирование модуля</h3>
+            <ul>
+                <li><code>import math</code> - импортирование модуля math</li>
+                <li><code>import random</code> - импортирование модуля random</li>
+            </ul>
+            <h3>Импортирование функции из модуля</h3>
+            <ul>
+                <li><code>from math import sin</code> - импортирование функции sin из модуля math</li>
+                <li><code>from random import randint</code> - импортирование функции randint из модуля random</li>
+            </ul>
+            <h3>Создание модуля</h3>
+            <ul>
+                <li><code>def greet(name): print("Hello, " + name + "!")</code> - определение функции в модуле</li>
+                <li><code>greet("John")</code> - вызов функции из модуля</li>
+            </ul>
+            <h3>Использование модуля</h3>
+            <ul>
+                <li><code>import mymodule</code> - импортирование модуля mymodule</li>
+                <li><code>mymodule.greet("John")</code> - вызов функции из модуля mymodule</li>
+            </ul>
+        </section>
+        <section id="math">
+            <h2>Математические функции</h2>
+            <p>Python имеет следующие математические функции:</p>
+            <ul>
+                <li><code>abs(x)</code> - абсолютное значение</li>
+                <li><code>pow(x, y)</code> - возведение в степень</li>
+                <li><code>round(x, y)</code> - округление</li>
+                <li><code>math.sin(x)</code> - синус</li>
+                <li><code>math.cos(x)</code> - косинус</li>
+                <li><code>math.tan(x)</code> - тангенс</li>
+            </ul>
+            <h3>Абсолютное значение</h3>
+            <ul>
+                <li><code>abs(-5)</code> - абсолютное значение -5</li>
+                <li><code>abs(5)</code> - абсолютное значение 5</li>
+            </ul>
+            <h3>Возведение в степень</h3>
+            <ul>
+                <li><code>pow(2, 3)</code> - 2 в степени 3</li>
+                <li><code>pow(5, 2)</code> - 5 в степени 2</li>
+            </ul>
+            <h3>Округление</h3>
+            <ul>
+                <li><code>round(3.14, 2)</code> - округление 3.14 до 2 знаков после запятой</li>
+                <li><code>round(5.678, 1)</code> - округление 5.678 до 1 знака после запятой</li>
+            </ul>
+            <h3>Синус</h3>
+            <ul>
+                <li><code>math.sin(math.pi/2)</code> - синус π/2</li>
+                <li><code>math.sin(math.pi/4)</code> - синус π/4</li>
+            </ul>
+            <h3>Косинус</h3>
+            <ul>
+                <li><code>math.cos(math.pi/2)</code> - косинус π/2</li>
+                <li><code>math.cos(math.pi/4)</code> - косинус π/4</li>
+            </ul>
+            <h3>Тангенс</h3>
+            <ul>
+                <li><code>math.tan(math.pi/4)</code> - тангенс π/4</li>
+                <li><code>math.tan(math.pi/2)</code> - тангенс π/2</li>
+            </ul>
+        </section>
+        <section id="itertools">
+            <h2>itertools</h2>
+            <p>itertools - это модуль в Python, который предоставляет функции для работы с итераторами.</p>
+            <ul>
+                <li><code>itertools.chain(*итераторы)</code> - объединяет несколько итераторов в один</li>
+                <li><code>itertools.cycle(итератор)</code> - создает итератор, который повторяет элементы исходного итератора</li>
+                <li><code>itertools.accumulate(итератор)</code> - создает итератор, который возвращает накопленные значения</li>
+                <li><code>itertools.groupby(итератор, ключ)</code> - группирует элементы итератора по ключу</li>
+                <li><code>itertools.permutations(итератор)</code> - создает итератор, который возвращает все перестановки элементов исходного итератора</li>
+                <li><code>itertools.combinations(итератор, r)</code> - создает итератор, который возвращает все комбинации элементов исходного итератора длины r</li>
+            </ul>
+            <h3>Объединение итераторов</h3>
+            <ul>
+                <li><code>itertools.chain([1, 2, 3], [4, 5, 6])</code> - объединяет два списка в один</li>
+            </ul>
+            <h3>Повторение итератора</h3>
+            <ul>
+                <li><code>itertools.cycle([1, 2, 3])</code> - создает итератор, который повторяет элементы списка [1, 2, 3]</li>
+            </ul>
+            <h3>Накопление значений</h3>
+            <ul>
+                <li><code>itertools.accumulate([1, 2, 3, 4, 5])</code> - создает итератор, который возвращает накопленные значения списка [1, 2, 3, 4, 5]</li>
+            </ul>
+            <h3>Группировка элементов</h3>
+            <ul>
+                <li><code>itertools.groupby([1, 2, 2, 3, 3, 3], lambda x: x)</code> - группирует элементы списка [1, 2, 2, 3, 3, 3] по ключу</li>
+            </ul>
+            <h3>Перестановки элементов</h3>
+            <ul>
+                <li><code>itertools.permutations([1, 2, 3])</code> - создает итератор, который возвращает все перестановки элементов списка [1, 2, 3]</li>
+            </ul>
+            <h3>Комбинации элементов</h3>
+            <ul>
+                <li><code>itertools.combinations([1, 2, 3], 2)</code> - создает итератор, который возвращает все комбинации элементов списка [1, 2, 3] длины 2</li>
+            </ul>
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyleft | AGPL-3.0-or-later | <a href="https://codeberg.org/SpiritOTHawk/Python-guide">Source</a></p>
+    </footer>
+</body>
+</html>
